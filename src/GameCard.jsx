@@ -1,9 +1,18 @@
+import {useState} from "react";
 
 function GameCard({game}) {
+
+    const [detail, setDetail] = useState(false)
+
+    function onRender() {
+        setDetail(!detail)
+    }
+
     return (
         <li className="cards_item">
-            <div className="card">
+            <div className={`card ${detail ? '' : 'hidden' }`}>
                 <img 
+                    onClick={onRender}
                     src={game.image}
                     alt={game.name}
                     className="card_image"
