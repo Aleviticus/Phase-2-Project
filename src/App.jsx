@@ -1,15 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react'
+import Navbar from './Navbar'
+import Title from './Title'
+import { Outlet } from 'react-router-dom'
 
 function App() {
-  return (
-    <div>
-    <GamePage />
-    <Genre />
-  </div>
-  )
-}
+
+  const [videoGames, setVideoGames] = useState([])
+
+    useEffect(() => {
+     fetch('http://localhost:3000/video-games')
+        .then(res => res.json())
+        .then(data => setVideoGames(data))
+    },   [])
+
+    
+
+    return (
+      <div>
+        <Title />
+        <Navbar />
+        <Outlet  context={{videoGames, setVideoGames}}/>
+      </div>
+    )
+  }
+  
+  
+
 
 export default App

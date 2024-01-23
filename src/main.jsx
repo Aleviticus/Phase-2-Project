@@ -1,10 +1,48 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import "./css/index.css"
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import './index.css'
+import GamePage from './Gamepage.jsx'
+import About from './About.jsx'
+import NewGameForm from './NewGameForm.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+
+
+
+const Main = () => {
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <GamePage/>
+        },
+        {
+          path: "/about",
+          element: <About />
+        },
+        {
+          path: "/form",
+          element: <NewGameForm />
+        }
+        
+      ]
+    }
+  ])
+
+  return (
+    <React.StrictMode>
+      <RouterProvider router={routes} />
+    </React.StrictMode>
+  )
+}
+
+  
+
+
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(<Main />)
