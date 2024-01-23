@@ -1,27 +1,39 @@
 import {useState} from "react";
+import { useOutletContext } from "react-router-dom";
 
 function NewGameForm() {
+    const {updateGames, videoGames, setVideoGames} = useOutletContext();
 
-    const [name, setName] = useState("")
-    const [genre, setGenre] = useState("")
-    const [image, setImage] = useState("")
-    const [date, setDate] = useState("")
-    const [platform, setPlatform] = useState("")
-    const [about, setAbout] = useState("")
+    const [formValues, setFormValues] = useState({
+        name: "",
+        genre: "",
+        image: "",
+        release: "",
+        platform: "",
+        about: ""
+    })
 
     function handleSubmit(e) {
         e.preventDefault();
-        let newGame = {name, image, genre, platform, date, about};
+        setVideoGames([...videoGames, formValues]);
+        setFormValues({
+            name: "",
+            genre: "",
+            image: "",
+            release: "",
+            platform: "",
+            about: ""
+        })
 
-        fetch("", {
+        fetch("http://localhost:3000/video-games", {
             method:"POST",
             headers: {
                 "content-type": "Application/json",
             },
-            body: JSON.stringify(newGame),
+            body: JSON.stringify(formValues),
         })
         .then((res) => res.json())
-        .then((data) => (data))
+        .then((data) => updateGames(data))
     }
 
     return (
@@ -32,45 +44,58 @@ function NewGameForm() {
                     type="text"
                     name="name"
                     placeholder="Game Title"
-                    value={name}
-                    onChange={(e) => {setName(e.target.value)}}
+                    value={formValues.name}
+                    onChange={(e) => 
+                        setFormValues({...formValues, name: e.target.value})
+                    }
                 />
                 <input
                     type="text"
                     name="image"
                     placeholder="Game Pic"
-                    value={image}
-                    onChange={(e) => {setImage(e.target.value)}}
+                    value={formValues.image}
+                    onChange={(e) => 
+                        setFormValues({...formValues, image: e.target.value})
+                }
                 />
                 <input
                     type="text"
                     name="genre"
-                    placeholder="Game Genre"
-                    value={genre}
-                    onChange={(e) => {setGenre(e.target.value)}}
+                    placeholder="Genre"
+                    value={formValues.genre}
+                    onChange={(e) => 
+                        setFormValues({...formValues, genre: e.target.value})
+                }
                 />
                 <input
                     type="text"
                     name="platform"
                     placeholder="Platform"
-                    value={platform}
-                    onChange={(e) => {setPlatform(e.target.value)}}
+                    value={formValues.platform}
+                    onChange={(e) => 
+                        setFormValues({...formValues, platform: e.target.value})
+                }
                 />
                 <input
                     type="text"
                     name="date"
                     placeholder="Release Date"
-                    value={date}
-                    onChange={(e) => {setDate(e.target.value)}}
+                    value={formValues.release}
+                    onChange={(e) => 
+                        setFormValues({...formValues, date: e.target.value})
+                }
                 />
-                <input
+                <textarea
                     type="text"
                     name="about"
                     placeholder="Description"
-                    value={about}
-                    onChange={(e) => {setAbout(e.target.value)}}
+                    
+                    value={formValues.about}
+                    onChange={(e) => 
+                        setFormValues({...formValues, about: e.target.value})
+                }
                 />
-                <button type="submit">Add Game</button>
+                <button id="create" type="submit">Add Game</button>
             </form>
         </div>
     )

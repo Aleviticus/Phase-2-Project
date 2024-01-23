@@ -1,85 +1,85 @@
-{ 
-    "video-games": [
-        {
-            "id":1,
-            "name": "Valorant",
-            "image": "",
-            "genre": "Shooter",
-            "release": "June 2, 2020",
-            "platform": "PC",
-            "about": ""
-        },
-        {
-            "id":2,
-            "name": "Tom Clancy's Rainbow Six Siege",
-            "image": "",
-            "genre": "Shooter",
-            "release": "December 1, 2015",
-            "platform": "PC, Xbox, Playstation",
-            "about": ""
-        },
-        {
-            "id":3,
-            "name": "CSGO",
-            "image": "",
-            "genre": "Shooter",
-            "release": "August, 21, 2012",
-            "platform": "PC, Xbox, Playstation ",
-            "about": ""
-        },
-        {
-            "id":4,
-            "name": "League of Legend",
-            "image": "",
-            "genre": "Battle Royal, Action Role Playing",
-            "release": "October 27, 2009",
-            "platform": "PC",
-            "about": ""
-        },
-        {
-            "id":5,
-            "name": "Final Fantasy VII",
-            "image": "",
-            "genre": "Fighting, Action Role Playing",
-            "release": "April 10, 2020",
-            "platform": "PC",
-            "about": "" 
-        },
-        {
-            "id":6,
-            "name": "GTA VI",
-            "image": "",
-            "genre": "Action Adventure",
-            "release": "TBA",
-            "platform": "PC, Xbox, Playstation",
-            "about": ""
-        },
-        {
-            "id":7,
-            "name": "Fifa 24",
-            "image": "",
-            "genre": "Sports",
-            "release": "September 29, 2023",
-            "platform": "PC, Xbox, Playstation",
-            "about": ""
-        },
-        {
-            "id":8,
-            "name": "Call of Duty: Modern Warfare III",
-            "image": "",
-            "genre": "Shooter",
-            "release": "November 10, 2023",
-            "platform": "PC, Xbox, Playstation",
-            "about": ""
-        },
-        {
-            "id":9,
-            "name": "Marvel's Spider-Man 2",
-            "image": "",
-            "genre": "Action-adventure game, Fighting game",
-            "release": "October 20, 2023",
-            "platform": "Playstation",
-            "about": ""
-        }
-    ]
+{
+  "video-games": [
+    {
+      "id": 1,
+      "name": "Valorant",
+      "image": "",
+      "genre": "Shooter",
+      "release": "June 2, 2020",
+      "platform": "PC",
+      "about": ""
+    },
+    {
+      "id": 2,
+      "name": "Tom Clancy's Rainbow Six Siege",
+      "image": "",
+      "genre": "Shooter",
+      "release": "December 1, 2015",
+      "platform": "PC, Xbox, Playstation",
+      "about": ""
+    },
+    {
+      "id": 3,
+      "name": "CSGO",
+      "image": "",
+      "genre": "Shooter",
+      "release": "August, 21, 2012",
+      "platform": "PC, Xbox, Playstation ",
+      "about": ""
+    },
+    {
+      "id": 4,
+      "name": "League of Legend",
+      "image": "",
+      "genre": "Battle Royal, Action Role Playing",
+      "release": "October 27, 2009",
+      "platform": "PC",
+      "about": ""
+    },
+    {
+      "id": 5,
+      "name": "Final Fantasy VII",
+      "image": "",
+      "genre": "Fighting, Action Role Playing",
+      "release": "April 10, 2020",
+      "platform": "PC",
+      "about": ""
+    },
+    {
+      "id": 6,
+      "name": "GTA VI",
+      "image": "",
+      "genre": "Action Adventure",
+      "release": "TBA",
+      "platform": "PC, Xbox, Playstation",
+      "about": ""
+    },
+    {
+      "id": 7,
+      "name": "Fifa 24",
+      "image": "",
+      "genre": "Sports",
+      "release": "September 29, 2023",
+      "platform": "PC, Xbox, Playstation",
+      "about": ""
+    },
+    {
+      "id": 8,
+      "name": "Call of Duty: Modern Warfare III",
+      "image": "",
+      "genre": "Shooter",
+      "release": "November 10, 2023",
+      "platform": "PC, Xbox, Playstation",
+      "about": ""
+    },
+    {
+      "id": 9,
+      "name": "Marvel's Spider-Man 2",
+      "image": "",
+      "genre": "Action-adventure game, Fighting game",
+      "release": "October 20, 2023",
+      "platform": "Playstation",
+      "about": ""
+    }
+  ]
 }
