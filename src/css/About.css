@@ -7,7 +7,6 @@
     padding: 20px;
 }
 
-/* Card styling */
 .Aaron, .Jaeem, .Joseph {
     border: 2px solid #4a90e2;
     border-radius: 15px;
@@ -20,7 +19,6 @@
     background: #002db3;
 }
 
-/* Image styling */
 .Aaron img, .Jaeem img, .Joseph img {
     width: 150px;
     height: 150px;
@@ -29,7 +27,6 @@
     margin-bottom: 10px;
 }
 
-/* Text styling */
 .Aaron p, .Jaeem p, .Joseph p {
     margin: 5px 0;
     color: white; 

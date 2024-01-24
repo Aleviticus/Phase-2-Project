@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import Title from './Title'
 import { Outlet } from 'react-router-dom'
-import './css/NewGameForm.css'
 
 function App() {
 
