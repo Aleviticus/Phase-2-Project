@@ -11,7 +11,7 @@ function GameCard({game}) {
                     <div className="card_title">{game.name}</div>
                     <div className="card_detail">
                         <p>Genre: {game.genre}</p>
-                        <p>Release Date:{game.release}</p>
+                        <p>Release Date: {game.release}</p>
                         <p>Platform: {game.platform}</p>
                         <p>About: {game.about}</p>
                     </div>
