@@ -1,7 +1,19 @@
-function Genre(){
+import React, {useState} from "react";
+
+function Genre({searchString, setSearchString}){
+
+    function handleSearch(e){
+        const searchInput = e.target.value
+        setSearchString(searchInput)
+    }
+
     return(
         <div className="search">
-              <input type="text"></input>
+            <input type="text" 
+                value={searchString} 
+                onChange={handleSearch}>
+
+            </input>
         </div>
     )
 }
