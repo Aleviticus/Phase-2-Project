@@ -1,5 +1,4 @@
 function GameCard({game}){
-    console.log(game)
     return(
         <div>
             <img src={game.image} />

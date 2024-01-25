@@ -1,17 +1,20 @@
 import Genre from "./Genre";
 import GameContainer from "./GameContainer";
+import { useState } from "react";
 import { useLocation, useOutletContext } from "react-router-dom";
 
 function GamePage(){
     const {videoGames} = useOutletContext();
-    console.log(videoGames)
+    const [searchString, setSearchString] = useState("")
+    
     return(
         <div>
-            <Genre />
-            <GameContainer videoGames={videoGames}/>
+            <Genre searchString={searchString} setSearchString={setSearchString} />
+            <GameContainer searchString={searchString }videoGames={videoGames}/>
 
         </div>
     )
 }
+
 
 export default GamePage;

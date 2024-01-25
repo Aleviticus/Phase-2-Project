@@ -1,0 +1,28 @@
+nav {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .custom-link {
+    text-decoration: none;
+    color: lightpurple;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: beige;
+    transition: background-color 0.3s;
+  }
+  
+  .custom-link:hover {
+    background-color: #a0c0ff;
+  }
+
