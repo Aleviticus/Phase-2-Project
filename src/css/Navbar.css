@@ -1,5 +1,5 @@
 nav {
-    background-color: lightblue;
+    background-color: #809fff;
     padding: 10px;
   }
   
@@ -13,16 +13,16 @@ nav {
   
   .custom-link {
     text-decoration: none;
-    color: lightpurple;
+    color: #002db3;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 10px;
     border-radius: 15px;
-    background-color: beige;
+    background-color: #bfcfff;
     transition: background-color 0.3s;
   }
   
   .custom-link:hover {
-    background-color: #a0c0ff;
+    background-color: #ffffff;
   }
 
