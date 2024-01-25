@@ -6,8 +6,11 @@ import App from './App.jsx'
 import GamePage from './Gamepage.jsx'
 import About from './About.jsx'
 import NewGameForm from './NewGameForm.jsx'
+import "./css/Navbar.css"
+import "./css/Genre.css"
 import './css/GameCard.css'
 import "./css/GameContainer.css"
+
 
 
 

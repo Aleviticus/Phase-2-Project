@@ -1,3 +1,4 @@
+
 function GameCard({game}) {
     return (
         <li className="cards_item">

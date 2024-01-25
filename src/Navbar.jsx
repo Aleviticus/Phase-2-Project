@@ -6,9 +6,9 @@ function Navbar(){
     return(
         <nav>
         <ul>
-            <NavLink to="/" >Home</NavLink>
-            <NavLink to="/form" >Form</NavLink>
-            <NavLink to="/about" >About</NavLink>
+            <NavLink to="/" className="custom-link">Home</NavLink>
+            <NavLink to="/form" className="custom-link">Form</NavLink>
+            <NavLink to="/about" className="custom-link">About</NavLink>
         </ul>
       </nav>
         
@@ -18,4 +18,28 @@ function Navbar(){
 export default Navbar;
 
 
-//REPLACE HREF TAGS
+// import React from "react";
+// import { NavLink } from "react-router-dom";
+// import "./styles.css"; // Make sure to import your CSS file
+
+// function Navbar() {
+//   return (
+//     <nav>
+//       <ul>
+//         <NavLink to="/" className="custom-link">
+//           Home
+//         </NavLink>
+//         <NavLink to="/form" className="custom-link">
+//           Form
+//         </NavLink>
+//         <NavLink to="/about" className="custom-link">
+//           About
+//         </NavLink>
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
+
+
