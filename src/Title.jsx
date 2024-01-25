@@ -1,6 +1,6 @@
 function Title(){
     return(
-        <h1 className="title">JAJ Gaming</h1>
+        <h1 className="title">[Cool Name Here]</h1>
     )
 }
 
