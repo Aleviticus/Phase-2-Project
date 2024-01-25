@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import Title from './Title'
 import { Outlet } from 'react-router-dom'
+import './css/NewGameForm.css'
 
 function App() {
 
@@ -11,7 +12,11 @@ function App() {
      fetch('http://localhost:3000/video-games')
         .then(res => res.json())
         .then(data => setVideoGames(data))
-    },   [])
+    }, [])
+
+    function updateGames(newGame) {
+      setVideoGames([...videoGames, newGame])
+    }
 
     
 
@@ -19,7 +24,7 @@ function App() {
       <div>
         <Title />
         <Navbar />
-        <Outlet  context={{videoGames, setVideoGames}}/>
+        <Outlet  context={{videoGames, setVideoGames, updateGames}}/>
       </div>
     )
   }
