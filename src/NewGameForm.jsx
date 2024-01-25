@@ -82,7 +82,7 @@ function NewGameForm() {
                     placeholder="Release Date"
                     value={formValues.release}
                     onChange={(e) => 
-                        setFormValues({...formValues, date: e.target.value})
+                        setFormValues({...formValues, release: e.target.value})
                 }
                 />
                 <textarea

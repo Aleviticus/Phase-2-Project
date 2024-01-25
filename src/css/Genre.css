@@ -1,5 +1,7 @@
 .search {
     margin: 10px;
+    display: flex;
+    justify-content: center;
   }
   
   .search input {
@@ -7,6 +9,8 @@
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
+
   }
 
   .title {

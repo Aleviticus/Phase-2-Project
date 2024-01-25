@@ -9,7 +9,9 @@ function Genre({searchString, setSearchString}){
 
     return(
         <div className="search">
-            <input type="text" 
+            <input 
+                type="text" 
+                placeholder="Search Games"
                 value={searchString} 
                 onChange={handleSearch}>
 
