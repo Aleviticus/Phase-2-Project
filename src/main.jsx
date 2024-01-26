@@ -12,10 +12,6 @@ import './css/GameCard.css'
 import "./css/GameContainer.css"
 import "./css/About.css"
 
-
-
-
-
 const Main = () => {
   const routes = createBrowserRouter([
     {
