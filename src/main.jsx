@@ -10,6 +10,7 @@ import "./css/Navbar.css"
 import "./css/Genre.css"
 import './css/GameCard.css'
 import "./css/GameContainer.css"
+import "./css/About.css"
 
 
 
