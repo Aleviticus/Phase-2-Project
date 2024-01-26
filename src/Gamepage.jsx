@@ -1,7 +1,7 @@
 import Genre from "./Genre";
 import GameContainer from "./GameContainer";
 import { useState } from "react";
-import { useLocation, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 function GamePage(){
     const {videoGames} = useOutletContext();
