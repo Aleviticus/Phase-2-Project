@@ -1,5 +1,3 @@
-import React, {useState} from "react";
-
 function Genre({searchString, setSearchString}){
 
     function handleSearch(e){
